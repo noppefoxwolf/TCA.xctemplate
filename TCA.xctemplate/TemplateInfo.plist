@@ -35,6 +35,15 @@
             <key>Path</key>
             <key>___FILEBASENAME___.swift</key>
         </dict>
+        <key>___FILEBASENAME___/___FILEBASENAME___+Previews.swift</key>
+        <dict>
+            <key>Group</key>
+            <array>
+                <string>___FILEBASENAME___</string>
+            </array>
+            <key>Path</key>
+            <key>___FILEBASENAME___+Previews.swift</key>
+        </dict>		
     </dict>
 	<key>Options</key>
 	<array>
