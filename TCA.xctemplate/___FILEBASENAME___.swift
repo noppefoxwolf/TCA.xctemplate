@@ -24,7 +24,6 @@ extension ___VARIABLE_productName:identifier___ {
     }
     
     struct State: Equatable {
-        let profile: Profile
     }
     
     enum Action: Equatable {
