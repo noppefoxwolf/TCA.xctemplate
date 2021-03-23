@@ -1,7 +1,7 @@
 import Foundation
 
 let templateName = "TCA.xctemplate"
-let destinationRelativePath = "/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/Project Templates/iOS/Application"
+let destinationRelativePath = "/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/File Templates/iOS/Source"
 
 func printInConsole(_ message:Any){
     print("====================================")
