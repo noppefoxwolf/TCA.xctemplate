@@ -10,13 +10,13 @@
 import SwiftUI
 import ComposableArchitecture
 
-enum ___VARIABLE_productName:identifier___ {}
+public enum ___VARIABLE_productName:identifier___ {}
 
-extension ___VARIABLE_productName:identifier___ {
+public extension ___VARIABLE_productName:identifier___ {
     struct View: SwiftUI.View {
         let store: Store<State, Action>
         
-        var body: some SwiftUI.View {
+        public var body: some SwiftUI.View {
             WithViewStore(store) { (viewStore) in
                 
             }
@@ -29,7 +29,10 @@ extension ___VARIABLE_productName:identifier___ {
     enum Action: Equatable {
     }
     
-    static let reducer = Reducer<State, Action, Void> { state, action, _ in
+    struct Environment {
+    }
+    
+    static let reducer = Reducer<State, Action, Environment> { state, action, _ in
         return .none
     }
 }
