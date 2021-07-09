@@ -32,7 +32,9 @@ public extension ___VARIABLE_productName:identifier___ {
     struct Environment {
     }
     
-    static let reducer = Reducer<State, Action, Environment> { state, action, _ in
+    static let reducer = Reducer<State, Action, Environment>.combine(
+        .init { state, action, _ in
         return .none
-    }
+        }
+    )
 }
