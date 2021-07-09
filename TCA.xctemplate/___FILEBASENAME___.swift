@@ -33,8 +33,8 @@ public extension ___VARIABLE_productName:identifier___ {
     }
     
     static let reducer = Reducer<State, Action, Environment>.combine(
-        .init { state, action, _ in
-        return .none
+        .init { state, action, environment in
+            return .none
         }
     )
 }
