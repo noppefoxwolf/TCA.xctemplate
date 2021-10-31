@@ -10,31 +10,31 @@
 import SwiftUI
 import ComposableArchitecture
 
-public enum ___VARIABLE_productName:identifier___ {}
-
-public extension ___VARIABLE_productName:identifier___ {
-    struct View: SwiftUI.View {
-        let store: Store<State, Action>
-        
-        public var body: some SwiftUI.View {
-            WithViewStore(store) { (viewStore) in
-                
-            }
+public struct ___VARIABLE_productName:identifier___View: SwiftUI.View {
+    let store: Store<___VARIABLE_productName:identifier___State, ___VARIABLE_productName:identifier___Action>
+    
+    public init(store: Store<___VARIABLE_productName:identifier___State, ___VARIABLE_productName:identifier___Action>) {
+        self.store = store
+    }
+    
+    public var body: some SwiftUI.View {
+        WithViewStore(store) { (viewStore) in
+            
         }
     }
-    
-    struct State: Equatable {
-    }
-    
-    enum Action: Equatable {
-    }
-    
-    struct Environment {
-    }
-    
-    static let reducer = Reducer<State, Action, Environment>.combine(
-        .init { state, action, environment in
-            return .none
-        }
-    )
 }
+
+public struct ___VARIABLE_productName:identifier___State: Equatable {
+}
+
+public enum ___VARIABLE_productName:identifier___Action: Equatable {
+}
+
+public struct ___VARIABLE_productName:identifier___Environment {
+}
+
+public static let ___VARIABLE_productName:identifier___Reducer = Reducer<___VARIABLE_productName:identifier___State, ___VARIABLE_productName:identifier___Action, ___VARIABLE_productName:identifier___Environment>.combine(
+    .init { state, action, environment in
+        return .none
+    }
+)
