@@ -25,15 +25,17 @@ public struct ___VARIABLE_productName:identifier___View: SwiftUI.View {
 }
 
 public struct ___VARIABLE_productName:identifier___State: Equatable {
+    public init() {}
 }
 
 public enum ___VARIABLE_productName:identifier___Action: Equatable {
 }
 
 public struct ___VARIABLE_productName:identifier___Environment {
+    public init() {}
 }
 
-public static let ___VARIABLE_productName:identifier___Reducer = Reducer<___VARIABLE_productName:identifier___State, ___VARIABLE_productName:identifier___Action, ___VARIABLE_productName:identifier___Environment>.combine(
+public let ___VARIABLE_productName:identifier___Reducer = Reducer<___VARIABLE_productName:identifier___State, ___VARIABLE_productName:identifier___Action, ___VARIABLE_productName:identifier___Environment>.combine(
     .init { state, action, environment in
         return .none
     }
